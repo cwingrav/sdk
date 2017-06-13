@@ -1,0 +1,25 @@
+{
+  "name": "woveon-sdk",
+  "version": "0.1.0",
+  "description": "SDK for Woveon dev platform",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node app",
+    "pretest": "npm install",
+    "test": "mocha  --no-timeouts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.sfxdx.ru:ottermates/sdk.git"
+  },
+  "author": "Allmax-Team",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  },
+  "devDependencies": {
+    "asyncawait": "^1.0.6",
+    "mocha": "^3.2.0"
+  }
+}
