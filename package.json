@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.sfxdx.ru:ottermates/sdk.git"
+    "url": "git@github.com:woveon/sdk.git"
   },
   "author": "Allmax-Team",
   "license": "ISC",
