@@ -11,9 +11,9 @@ Requester.request = (url, method, body) => {
     },
     body: body ? JSON.stringify(body) : ''
   }).then(function(result) {
-    console.log(result);
     return result.json();
   }).then((result) => {
+      console.log(result);
       if (result.success) {
         return result.result;
       }
