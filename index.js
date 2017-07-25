@@ -8,7 +8,7 @@ module.exports = (host, appId, appSecret) => {
   appData.host = host;
 
   const res = core(appData);
-  let handlers;
+  var handlers;
   res.setHandlers = (cHandlers) => {
     handlers = cHandlers;
   };

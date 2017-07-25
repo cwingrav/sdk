@@ -10,8 +10,10 @@ Requester.request = (url, method, body) => {
       'Content-Type': 'application/json'
     },
     body: body ? JSON.stringify(body) : ''
-  }).then(r => r.json())
-    .then((result) => {
+  }).then(function(result) {
+    console.log(result);
+    return result.json();
+  }).then((result) => {
       if (result.success) {
         return result.result;
       }
