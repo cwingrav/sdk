@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 const Requester = {};
 
 Requester.request = (url, method, body) => {
-  console.log(url, method, body);
+  console.log("SDK Requester: ", url, method);
   return fetch(url, {
     method,
     headers: {
