@@ -6,7 +6,7 @@ const Requester = {};
 
 Requester.request = async (url, method, body) => {
   let retval = null;
-  console.log(`SDK Requester: ${url} ${method}`);
+  console.log(`SDK Requester:: ${url} ${method}`);
   try {
     const r = isTest ? {
       json: () => (new Promise(resolve => resolve({
