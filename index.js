@@ -3,12 +3,13 @@ const core = require('./core');
 const appData = {};
 
 module.exports = (host, appId, appSecret) => {
+    console.log("sdk :",host,appId,appSecret);
   appData.id = appId;
   appData.secret = appSecret;
   appData.host = host;
 
   const res = core(appData);
-  var handlers;
+  let handlers;
   res.setHandlers = (cHandlers) => {
     handlers = cHandlers;
   };

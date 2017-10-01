@@ -7,7 +7,8 @@
     "prestart": "npm install",
     "start": "node app",
     "pretest": "npm install",
-    "test": "mocha  --no-timeouts"
+    "test": "mocha  --no-timeouts",
+    "oldtest": "WOVSDK_HOST=http://local-email-plugin.woveon.com/ mocha  --no-timeouts"
   },
   "repository": {
     "type": "git",
@@ -16,10 +17,10 @@
   "author": "Allmax-Team",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^1.6.3"
+    "node-fetch": "^1.7.3"
   },
   "devDependencies": {
     "asyncawait": "^1.0.6",
-    "mocha": "^3.2.0"
+    "mocha": "^3.5.3"
   }
 }
