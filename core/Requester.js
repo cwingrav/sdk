@@ -26,7 +26,7 @@ Requester.request = async (url, method, body) => {
         headers: { 'Content-Type': 'application/json' },
         body: body ? JSON.stringify(body) : ''
       }).then( (result) => {
-//        console.log("ehere",result);
+        console.log("ehere",result);
         if ( result.status == 200 ) { 
           //console.log("Requester to (",url,") returned ",result);
           return await(r.json());
